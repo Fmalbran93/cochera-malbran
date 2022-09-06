@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body class="grid-area2">
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <!--Todo el contenido del navegador-->
+                <div class="menu-toggle">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times"></i>
+                </div>
+                <a href="#" class="logo">Cochera.</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./galeria.html" class="nav-link">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./eventos.html" class="nav-link">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./nosotros.html" class="nav-link">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Inicio seccion1-->
+    <section class="hero-index" id="hero">
+        <div class="container">
+          <h2 class="h2-sub"><span class="fil">C</span>ontactanos</h2>
+          <h1 class="head">Dejanos tus datos!</h1>
+        </div>
+    </section>
+    <section class="form">
+        <form class="form-content">
+            <p>nos comunicaremos a la brevedad!</p>
+            <fieldset>
+              <legend>Datos personales</legend>
+              <label class="label"  for="nombre">Ingresa tu nombre</label>
+              <input class="controls" id="nombre" type="text" placeholder="Ingresa tu nombre">
+              <label class="label"  for="Telefono">Telefono</label>
+              <input class="controls" id="apellido" type="text" placeholder="Ingrasa tu telefono">
+              <label class="label" for="email">Ingresa tu email</label>
+              <input class="controls" id="email" type="email" placeholder="Email">
+            </fieldset>
+            <fieldset>
+              <legend>Reservas y consultas</legend>
+              <br>
+             <label class="label" for="option">Selecciona la opcion deseada </label>
+             <br>
+             <select>
+              <option>Reservas</option>
+              <option>Consultas</option>
+             </select>
+             <br>
+             <label class="label" for="socia--media">Selecciona Medio de contacto</label>
+             <br>
+             <select>
+              <option>Instagram</option>
+              <option>Facebook</option>
+              <option>whatsapp</option>
+             </select>
+             <br>
+             </li>
+             <br>
+             <label class="label">Acepto los terminos y condiciones</label>
+             <input type="checkbox">
+             <br>
+             <label class="label">Deseo recibir promos y eventos por email</label>
+             <input type="checkbox" checked>
+             <br>
+            </fieldset>
+            <fieldset>
+              <legend>Enviar info</legend>
+              <input class="form-btn" type="submit" value="Aceptar">
+              <input class="form-btn" type="reset" value="Cancelar">
+            </fieldset>
+        </form>
+    </section>
+    <!--Inicio Footer-->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-content-about">
+                    <h4>Nosotros</h4>
+                    <div class="circle">
+                    <i class="fas fa-circle"></i>
+                    </div>
+                    <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Deleniti, sapiente unde quas natus accusamus aperiam fugit,
+                    aspernatur molestias sunt repellat velit, error voluptatem?
+                    Aspernatur magni porro, laboriosam repudiandae culpa itaque.
+                    </p>
+                </div>
+                <div class="footer-div">
+                    <div class="social-media">
+                        <h4>Siguenos</h4>
+                        <ul class="social-icons">
+                            <li>
+                            <a href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                            <a href="https://es-la.facebook.com/cocherabar/" target="_blank"> <i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                            <a href="https://ar.pinterest.com/" target="_blank"> <i class="fab fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                            <a href="https://www.linkedin.com/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                            <a href="https://www.tripadvisor.com.ar/Restaurant_Review-g312768-d15514261-Reviews-Cochera_Birreria_de_barrio-Cordoba_Province_of_Cordoba_Central_Argentina.html" target="_blank"> <i class="fab fa-tripadvisor"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Noticias</h4>
+                        <form action="" class="news-form">
+                            <input
+                            type="text"
+                            class="news-imput"
+                            placeholder="Escribe tu email"
+                            />
+                            <button class="news-btn" type="submit">
+                            <i class="fas fa-envelope"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Fin Footer-->
+
+    <script>
+
+        const selectElement= function(element) {
+          return document.querySelector(element);
+          }
+  
+          let menuToggle= selectElement('.menu-toggle');
+          let body = selectElement('body');
+          
+          menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open')
+          })
+  
+    </script>
+    
+</body>
+</html>
