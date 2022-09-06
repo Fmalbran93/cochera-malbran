@@ -648,6 +648,21 @@ video{
 	filter: grayscale(0);
 }
 
+/* efecto evento */
+.img-group figure video {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-group figure:hover video {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
 
 @media screen and (min-width: 800px) {
     /* Index-grid-area */
