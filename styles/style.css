@@ -61,7 +61,7 @@ header {
 
 }
 
-.menu-toggle {
+/* .menu-toggle {
     color: #fff;
     font-size: 2.2rem;
     position: absolute;
@@ -70,11 +70,11 @@ header {
     right: 2.5rem;
     cursor: pointer;
     z-index: 1500;
-}
+} */
 
-.fa-times {
+/* .fa-times {
     display: none;
-}
+} */
 
 .nav-list {
     list-style: none;
@@ -94,7 +94,7 @@ header {
    
 }
 
-.nav::before {
+/* .nav::before {
     content: '';
     position: fixed;
     top: 0;
@@ -123,7 +123,7 @@ header {
 .open .nav::before{
     opacity: 1;
     transform: scale(1);
-}
+} */
 
 .logo {
     color: #fff;
