@@ -106,17 +106,13 @@ header {
     opacity: 0;
     transform: scale(0);
     transition: opacity .5s;
-
 }
-
 .open .fa-times {
     display: block;
 }
-
 .open .fa-bars {
     display: none;
 }
-
 .open .nav-list {
     transform: translateX(0);
 }
@@ -491,5 +487,3 @@ video{
 .footer{
     grid-area: footer;
 }
-
-
