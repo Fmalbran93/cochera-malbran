@@ -43,14 +43,14 @@ p {
 
 /*Hero*/
 
+
 .hero-index{
     width: 100%;
     height: 60vh;
     background: url("../images/hero4.jpg") center no-repeat;
     background-size: cover;
-    display: flex;
     align-items: center;
-    text-align: center;
+    @include flex(flex, center);
 }
 
 .banner-index{
@@ -59,9 +59,9 @@ p {
     margin: 50px auto;
     background: url("../images/restaurant-Barra.jpg") center no-repeat;
     background-size: cover;
-    display: flex;
     align-items: center;
-    text-align: center;
+    @include flex(flex, center);
+
 }
 .banner-index2{
     width: 100%;
@@ -69,18 +69,10 @@ p {
     margin: 50px auto;
     background: url("../images/mesa-hambu.jpg") center no-repeat;
     background-size: cover;
-    display: flex;
     align-items: center;
-    text-align: center;
+    @include flex(flex, center);
 }
 
-.h2-sub {
-    font-size: 3rem;
-    font-family: 'Poppins', sans-serif;
-    color: #3bcc75;
-    font-weight: 600;
-    line-height: .4;
-}
 
 .fil {
     text-transform: uppercase;
@@ -132,7 +124,7 @@ p {
 
 .cta-btn {
     font-size: 1.1rem;
-    background-color: $colorBtn;
+    background-color: map-get($Color-botones, color-primary);
     padding: 1.5rem 3rem;
     color: #fff;
     border-radius: .4rem;
@@ -140,7 +132,7 @@ p {
 .cta-btn:hover,
 .cta-btn:focus {
     color: #fff;
-    background-color: $ColorHover;
+    background-color: map-get($Color-botones, Color-secondary);
 }
 
 
@@ -155,15 +147,11 @@ p {
 }
 
 .global .circle {
-    color: #3bcc75;
+    color: $Color-secondary;
     margin: 2.4rem 0;
 }
 
-.hea-dark {
-    color: #252525;
-    letter-spacing: .7rem;
-    margin-right: -.7rem;
-}
+
 
 .global .h2-sub {
     letter-spacing: -1px;
@@ -193,48 +181,7 @@ p {
     
 }
 
-/*Contactos html*/
 
-
-
-
-.form-btn{
-    background-color: $colorBtn;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 1.6rem;
-    padding: 1px .6rem;  
-    justify-content: space-around;
-    margin: 5px;
-}
-
-.form-btn:hover,
-.form-btn:focus {
-    color: #fff;
-    background-color: #3bc7cc;
-}
-
-.form-btn{
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 1.1rem;
-    padding: 1.5rem 3rem;
-    color: #fff;
-    border-radius: .3rem;
-    justify-content: space-between;
-}
-
-.form p{
-    color: #ffffff;
-    font-size: 2rem;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: .5rem;
-    
-}
 /* CONTACTOS */
 
 .img-group-events{
@@ -265,35 +212,7 @@ video{
 }
 
 
-.btn-outline-new-white:hover {
-    color: #ffffff;
-    background-color: #333333;
-    border-color: #333333;
-} 
-.cover-slides h1 {
-    font-family: 'Rubik',sans-serif;
-    font-weight: 500;
-    font-size: 64px;
-    color: #fff;
-}
-.cover-slides p {
-    font-size: 18px;
-    color: #fff;
-}
-.slides-navigation a {
-    border: 2px solid #ffffff;
-}
-.slides-navigation a.current {
-    background: #3bcc75;
-    border: 2px solid #3bcc75;
-}
 
-
-/* ========= Galeria index ===========*/
-/* .gallery-box {
-    width: 50%;
-    margin: 50px auto;
-} */
 .tz-gallery {
     width: 50%;
     margin: 50px auto;
@@ -308,7 +227,7 @@ video{
     box-shadow: 0 8px 15px rgba(0,0,0,0.3);
 } 
 .tz-gallery .lightbox {
-    border: 3px solid #3bcc75;
+    border: 3px solid $Color-secondary;
     display: inline-block;
     margin-bottom: 30px;
 }

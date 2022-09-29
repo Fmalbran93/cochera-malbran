@@ -7,29 +7,7 @@ footer {
   position: relative;
 }
 
-// .footer-content {
-//     overflow: hidden;
-// }
 
-// .footer-content h4 {
-//     font-size: 1.9rem;
-//     text-transform: uppercase;
-//     font-weight: 100;
-//     letter-spacing: 3px;
-//     margin-bottom: 3rem;
-// }
-
-// .footer-content .circle{
-//     margin: 2.4rem 0;
-// }
-
-// .footer-content-about {
-//     margin-bottom: 5.4rem;
-// }
-
-// .footer-content-about p {
-//     line-height: 2;
-// }
 
 .social-icons {
   list-style: none;
@@ -38,19 +16,17 @@ footer {
   justify-content: center;
    i {
     font-size: 2rem;
-    color: #3bcc75;
+    color: map-get($Color-botones, Color-secondary);
     padding: 0.8rem 2rem;
     &:focus{
-        color: #ffc845;
+        color: map-get($Color-botones, color-primary);
       }
     &:hover{
-      color: #ffc845;
+      color: map-get($Color-botones, color-primary);
     }
   }
 }
 
-// .social-icons i:hover,
-// .social-icons i
 
 .iframe {
   justify-content: center;

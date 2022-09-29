@@ -22,7 +22,7 @@ header {
                 margin-right: -2px;
                 background-color: #252525;
                 &:hover {
-                    color: $ColorHover 
+                    color: map-get($Color-botones, Color-secondary);
                 }
             }
             
