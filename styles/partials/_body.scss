@@ -190,14 +190,37 @@ p {
 
 /* CONTACTOS */
 
+.form-horizontal{
+    box-shadow: 0 20px 32px 0 rgba(0, 0, 0, 0.5), 0 20px 32px 0 rgba(0, 0, 0, 0.50);
+}
+
+
 .img-group-events{
     display: block;
 }
 
+legend{
+    margin: 8px;
+}
+
+label{
+    margin: 2px;
+    padding: 0px;
+    font-size: 1.2rem;
+}
+
+option{
+    font-size: 1.1rem;
+}
+
+select{
+    margin: 2px;
+    padding: 0px;
+}
 
 
 /* Nosotros */
-/* efecto evento */
+
 .card figure video {
 	-webkit-filter: blur(3px);
 	filter: blur(3px);

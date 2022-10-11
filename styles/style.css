@@ -25,7 +25,7 @@ header .navbar .nav-item .nav-link {
   font-size: 1.6rem;
   letter-spacing: 2px;
   margin-right: -2px;
-  background-color: #252525;
+  background-color: #212428;
 }
 header .navbar .nav-item .nav-link:hover {
   color: #3bcc75;
@@ -213,12 +213,34 @@ p {
 }
 
 /* CONTACTOS */
+.form-horizontal {
+  box-shadow: 0 20px 32px 0 rgba(0, 0, 0, 0.5), 0 20px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
 .img-group-events {
   display: block;
 }
 
+legend {
+  margin: 8px;
+}
+
+label {
+  margin: 2px;
+  padding: 0px;
+  font-size: 1.2rem;
+}
+
+option {
+  font-size: 1.1rem;
+}
+
+select {
+  margin: 2px;
+  padding: 0px;
+}
+
 /* Nosotros */
-/* efecto evento */
 .card figure video {
   filter: blur(3px);
   transform: scale(1);
@@ -303,4 +325,5 @@ footer {
 
 .submit {
   border-radius: 5px;
+  border-color: transparent;
 }/*# sourceMappingURL=style.css.map */
