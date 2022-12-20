@@ -3,6 +3,11 @@ const cantidadCarrito = document.getElementById("cantidadCarrito");
 
 let carrito = [];
 
+/* Cargar Carrito - LocalStorage */
+if ( localStorage.getItem("carrito")){
+    carrito = JSON.parse(localStorage.getItem("carrito"))
+}
+
 //Recorro el array
 
 const mostrarProductos = () => {
@@ -27,6 +32,8 @@ const mostrarProductos = () => {
         const botonAgregar = document.getElementById(`botonAgregar${producto.id}`);
         botonAgregar.addEventListener("click", () => {
             agregarAlCarrito(producto.id)
+
+            
         })
     })
 };
@@ -42,6 +49,7 @@ const agregarAlCarrito = (id) => {
     } else { 
         producto = productos.find(producto => producto.id === id);
         carrito.push(producto);
+        localStorage.setItem("carrito", JSON.stringify(carrito));
     }
     console.log(carrito);
     contadorCarrito();
@@ -122,6 +130,8 @@ const eliminarDelCarrito = (id) => {
     carrito.splice(indice, 1);
 
    verCarrito();
+
+   localStorage.setItem("carrito", JSON.stringify(carrito));
 }
     
 const contadorCarrito = () => {
@@ -137,9 +147,13 @@ const vaciarCarrito = document.getElementById("vaciarCarrito");
 
 vaciarCarrito.addEventListener("click", () => {
     eliminarTodoElCarrito();
+
 })
 
 const eliminarTodoElCarrito = () => {
     carrito = [];
+
+    //localStorage:
+    localStorage.clear();
     
 }
