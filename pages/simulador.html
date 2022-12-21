@@ -46,7 +46,7 @@
                 <a href="../pages/nosotros.html" class="nav-link">Nosotros</a>
               </li>
               <li class="nav-item px-4">
-                <button href="#" class="ver-carrito nav-link" id="verCarrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Carrito<i class="fa-solid fa-cart-shopping"></i> <span id="cantidadCarrito" class="cantidad-carrito"></span></button> 
+                <button href="#" class="ver-carrito nav-link" id="verCarrito">Carrito<i class="fa-solid fa-cart-shopping"></i> <span id="cantidadCarrito" class="cantidad-carrito"></span></button> 
               </li>
             </ul>
           </div>
@@ -72,13 +72,13 @@
 
 
   <!-- Contenido del Carrito -->
-  <div id="carritoContenedor" class="shop-content row"></div>
+  
 
-  <div id="productosEnCarrito" class="modal-container row"></div>
+  <div id="contenedorProductos" class="modal-container row"></div>  
 
   <button class="btn cta-btn" id="vaciarCarrito">Vaciar Carrito</button>
 
-
+  <div id="contenedorCarrito" class="row"></div>
 
 
 
@@ -87,7 +87,7 @@
   
   <script src="../Js/productos.js"></script>
   <script src="../Js/app.js"></script>
-  <script src="../Js/carrito"></script>
+
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
